@@ -1,0 +1,25 @@
+@import "../../../index.scss";
+
+.image {
+  img {
+    width: 120px;
+    height: 200px;
+  }
+
+  h2 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .image {
+    img {
+      width: 198px;
+      height: 293px;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}

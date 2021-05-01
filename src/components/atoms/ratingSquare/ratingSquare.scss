@@ -1,0 +1,22 @@
+@import "../../../index.scss";
+
+.nota {
+  @include flexCenter();
+  width: 51px;
+  height: 51px;
+  border-radius: 6px;
+  background-color: rgb(255, 245, 0);
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 15px 0;
+  color: #45155a;
+}
+
+@media (min-width: 1024px) {
+  .nota {
+    width: 81px;
+    height: 81px;
+    font-size: 2rem;
+    padding: 0px 0;
+  }
+}

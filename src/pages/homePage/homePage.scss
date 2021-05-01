@@ -1,0 +1,24 @@
+@import "../../index.scss";
+
+.home_container {
+  @include flexCenter();
+  width: 100%;
+  flex-flow: column;
+  background-color: $bg_color_ligth;
+
+  .content {
+    background-color: $bg_color_ligth;
+    column-count: 2;
+    column-rule: 1px solid rgba(255, 255, 255, 0.603);
+    transform: rotateY(180deg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .home_container {
+    .content {
+      column-gap: 300px;
+      column-rule-width: 3px;
+    }
+  }
+}

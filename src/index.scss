@@ -1,0 +1,35 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+$bg_color_ligth: rgb(64, 19, 83);
+$bg_color_dark: rgb(0, 0, 0);
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: $bg_color_ligth;
+}
+
+html,
+body,
+#root,
+p,
+nav,
+div,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  color: white;
+}

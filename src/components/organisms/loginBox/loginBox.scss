@@ -1,0 +1,16 @@
+@import "../../../index.scss";
+
+#login_box {
+  @include flexCenter();
+  flex-direction: column;
+  grid-area: "Login";
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  #login_box button {
+    width: 266px;
+    height: 56px;
+  }
+}

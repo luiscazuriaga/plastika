@@ -1,0 +1,53 @@
+@import "../../../index.scss";
+
+.showcase_box {
+  @include flexCenter();
+  flex-flow: column;
+  max-width: 563px;
+  min-width: 120px;
+  height: 400px;
+  break-inside: avoid-column;
+  margin-top: 150px;
+  transform: rotateY(180deg) translateY(50%);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: white;
+
+  h5,
+  p {
+    font-size: 0.6rem;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .showcase_box {
+    width: 327px;
+    height: 776px;
+    margin-top: 250px;
+
+    h5,
+    p {
+      font-size: 1rem;
+    }
+
+    p {
+      margin-top: 40px;
+    }
+
+    button {
+      p {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .showcase_box {
+    width: 536px;
+  }
+}
